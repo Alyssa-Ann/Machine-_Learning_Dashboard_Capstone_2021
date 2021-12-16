@@ -15,13 +15,13 @@ The initial dataset was sourced from Kaggle. See https://www.kaggle.com/gauthamp
 The team will be communicating primarily over Slack and Google Docs. The files and databases will be shared on Github. 
 
 ## Technology
-Jupyter Notebook
-Pandas 
-Numpy
-Sklearn
-Plotly
-Matplotlib
-Flask
+1. Jupyter Notebook
+2. Pandas 
+3. Numpy
+4. Sklearn
+5. Plotly
+6. Matplotlib
+7. Flask
 
 ## Databases
 This analysis will be composed of two databases. The first database will be our proprietary algorithm and include the rating, rating count, maximum installs, and a new column called success. The success column will be true or 0 if the app is above the median rating and maximum installs as well as above 250 rating count. 
