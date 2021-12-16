@@ -10,3 +10,23 @@ Google Play  is Android's official store for app purchases including games, musi
 
 ## Data Source
 The initial dataset was sourced from Kaggle. See https://www.kaggle.com/gauthamp10/google-playstore-apps for the original csv file. This data source has been cleaned of any superfluous columns. 
+
+# Communication Protocols
+The team will be communicating primarily over Slack and Google Docs. The files and databases will be shared on Github. 
+
+# Technology
+Jupyter Notebook
+Pandas 
+Numpy
+Sklearn
+Plotly
+Matplotlib
+Flask
+
+# Databases
+This analysis will be composed of two databases. The first database will be our proprietary algorithm and include the rating, rating count, maximum installs, and a new column called success. The success column will be true or 0 if the app is above the median rating and maximum installs as well as above 250 rating count. 
+
+The second database will include features of an app. Category, price, size, release date, content rating, ads supported, in-app-purchases, and editor's choice are all features that will be analyzed in order to determine what drives success in apps. 
+
+# Machine Learning Model 
+This analysis lends itself to a supervised machine learning model. To run the machine learning model, a random sampling of about 20000 apps will be used to analyze our data.
