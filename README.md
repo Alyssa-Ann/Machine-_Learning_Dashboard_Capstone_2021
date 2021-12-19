@@ -15,18 +15,14 @@ The initial dataset was sourced from Kaggle. See https://www.kaggle.com/gauthamp
 The team will be communicating primarily over Slack and Google Docs. The files and databases will be shared on Github. 
 
 ## Technology
-1. Jupyter Notebook
-2. Pandas 
-3. Numpy
-4. Sklearn
-5. Plotly
-6. Matplotlib
-7. Flask
+
+The model was built with Jupyter Notebook with Pandas for data cleaning and wrangling, Matplotlib for model visualization with Jupyter Notebook, and SciKit Learn for Machine Learning. The csv file was pushed through a MongoDB database, but may be moved to AWS depending on future findings. The app will be developed through flask. 
 
 ## Databases
-This analysis will be composed of two databases. The first database will be our proprietary algorithm and include the rating, rating count, maximum installs, and a new column called success. The success column will be true or 0 if the app is above the median rating and maximum installs as well as above 250 rating count. 
+This analysis will be composed of two databases. The first database will be our proprietary algorithm and include the rating, rating count, maximum installs, and a new column called success. The success column will be true or 1 if the app is above the median rating and maximum installs as well as above 250 rating count. 
 
-The second database will include features of an app. Category, price, size, release date, content rating, ads supported, in-app-purchases, and editor's choice are all features that will be analyzed in order to determine what drives success in apps. 
+The second database will include features of an app. Category, price, size, release date, content rating, ads supported, and in-app-purchases are all features that will be analyzed in order to determine what drives success in apps. 
 
 ## Machine Learning Model 
-This analysis lends itself to a supervised machine learning model. To run the machine learning model, a random sampling of about 20000 apps will be used to analyze our data.
+This analysis lends itself to a supervised machine learning model. To run the machine learning model, a random sampling of about 20000 apps will be used to analyze our data. For this first segment a DecisionTreeClassifier and a RandomForestClassifier were run, but both got similar results of about 79% for the current question of whether an app was successful or not.  
+
