@@ -16,12 +16,10 @@ The team will be communicating primarily over Slack and Google Docs. The files a
 
 ## Technology
 
-The model was built with Jupyter Notebook with Pandas for data cleaning and wrangling, Matplotlib for model visualization with Jupyter Notebook, and SciKit Learn for Machine Learning. The csv file was pushed through a MongoDB database, but may be moved to AWS depending on future findings. The app will be developed through flask. 
+The model was built with Jupyter Notebook with Pandas for data cleaning and wrangling, Matplotlib for model visualization with Jupyter Notebook, and SciKit Learn for Machine Learning. The csv file was pushed through a MongoDB database and an S3 AWS database to determine which would be more functional for this project. An app will be created in the future that will be run through flask.   
 
-## Databases
-This analysis will be composed of two databases. The first database will be our proprietary algorithm and include the rating, rating count, maximum installs, and a new column called success. The success column will be true or 1 if the app is above the median rating and maximum installs as well as above 250 rating count. 
-
-The second database will include features of an app. Category, price, size, release date, content rating, ads supported, and in-app-purchases are all features that will be analyzed in order to determine what drives success in apps. 
+## Data Exploration
+This analysis will be composed of two dataframes. The first dataframe will be our proprietary algorithm and include the rating, rating count, maximum installs, and a new column called success. The success column will be true or 1 if the app is above the median rating and maximum installs as well as above 250 rating count. The second dataframe will include features of an app. Category, price, size, release date, content rating, ads supported, and in-app-purchases are all features that will be analyzed in order to determine what drives success in apps. the original Kaggle file and newly cleaned csv file are robust, leading to data storage through MongoDB and S3 AWS. Both databases have been run through the machine learning model to showcase successful intgration.  
 
 ## Machine Learning Model 
 This analysis lends itself to a supervised machine learning model. To run the machine learning model, a random sampling of about 20000 apps will be used to analyze our data. For this first segment a DecisionTreeClassifier and a RandomForestClassifier were run, but both got similar results of about 79% for the current question of whether an app was successful or not.  
