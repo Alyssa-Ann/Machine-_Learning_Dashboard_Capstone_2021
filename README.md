@@ -32,5 +32,16 @@ Rutgers Data Bootcamp Final Project
 - Rating, Rating Count, and Maximum Installs were not included in the features because they were used to create
 the Good_App column and any machine learning selected would find this relationship and would result in a perfect match
 for the data no matter what.
+
+## Training and Testings Sets
+
+X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=78)
+
+- X values for the data training were all the Features that were selected to be included above.
+
+- y values were simply the values from the Good_App column.
+
+
+
  
 
