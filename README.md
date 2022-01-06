@@ -12,3 +12,25 @@ Rutgers Data Bootcamp Final Project
 7. Extracted the month number from the updated Released date column.
 8. Encoded the 'Category' column for use.
 9. Dropped the 'Released' column and 'Size (Mb)' column.
+
+## Feature Selection
+
+### Included:
+- Price
+- Ad Supported
+- In App Purchases
+- Month_Num (Released Month)
+- Encoded Category Columns
+
+
+### Not Included:
+- Good_App column not included as this is the result we are looking to predict/test for.
+- Rating
+- Rating Count
+- Maximum Installs
+
+- Rating, Rating Count, and Maximum Installs were not included in the features because they were used to create
+the Good_App column and any machine learning selected would find this relationship and would result in a perfect match
+for the data no matter what.
+ 
+
