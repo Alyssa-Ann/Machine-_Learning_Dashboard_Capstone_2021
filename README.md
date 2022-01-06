@@ -1,5 +1,5 @@
 # Machine-_Learning_Dashboard_Capstone_2021
-Rutgers Data Bootcamp Final Project
+## Rutgers Data Bootcamp Final Project
 
 ## Data Preprocessing
 
@@ -41,7 +41,12 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=78)
 
 - y values were simply the values from the Good_App column.
 
+## Model Choice
 
+- Ran through 4 different machine learning models before settling on DecisionTreeClassifier. Also performed RandomForestClassifier,
+Random UnderSampling, and Boosting. However, none of these models performed significantly better than the DecisionTree Classifier to merit
+switching to them. The final accuracy score of the DecisionTreeClassifier being 0.7993422068496958.
 
+![Confusion Matrix]()
  
 
