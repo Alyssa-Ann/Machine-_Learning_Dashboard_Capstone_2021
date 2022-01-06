@@ -47,6 +47,6 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=78)
 Random UnderSampling, and Boosting. However, none of these models performed significantly better than the DecisionTree Classifier to merit
 switching to them. The final accuracy score of the DecisionTreeClassifier being 0.7993422068496958.
 
-![Confusion Matrix]()
+![Confusion Matrix](https://github.com/Alyssa-Ann/Machine_Learning_Dashboard_Capstone_2021/blob/Machine_Learn/Images/DecisionTreeClassifier_ConfusionMatrix.png)
  
 
