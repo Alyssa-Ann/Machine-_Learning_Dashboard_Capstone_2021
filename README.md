@@ -11,3 +11,9 @@ https://docs.google.com/presentation/d/1CzfQGNICr494rHfeoBJDLGvN3tXc-nueh5KBQIHy
 Tableau was used to create visualization, and will be used to create interactive dashboards displaying data used to support findings of this project. Dashboards were created to display data on different features and results including installs, ratings, categories, and successful apps features.
 
 https://public.tableau.com/views/Google_App_Store_Final/SuccessfulApps?:language=en-US&:display_count=n&:origin=viz_share_link
+
+## Dashboard Conceptualization
+
+A storyboard was created using Google Slides to outline the basic features of our dashboard and the elements it will contain.
+
+https://docs.google.com/presentation/d/1EhOnHk-wfv1HrGhrd_nG5N0M-_3SBkQa_MmpDVsHwQg/edit?usp=sharing
