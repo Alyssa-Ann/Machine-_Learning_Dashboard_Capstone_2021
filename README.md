@@ -53,4 +53,4 @@ switching to them. The final accuracy score of the DecisionTreeClassifier being 
 Purchases' seem to do the heavy lifting followed by 'Month Num' and 'Ad Supported'. Next, 'Price' is included in the list and then the entire model is finished off with all
 the categories contributing minuscule amounts.
 
-![]()
+![Feature_Importance_List](https://github.com/Alyssa-Ann/Machine_Learning_Dashboard_Capstone_2021/blob/Machine_Learn/Images/Feature_Importance_List.png)
