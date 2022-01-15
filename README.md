@@ -49,4 +49,8 @@ switching to them. The final accuracy score of the DecisionTreeClassifier being 
 
 ![Confusion Matrix](https://github.com/Alyssa-Ann/Machine_Learning_Dashboard_Capstone_2021/blob/Machine_Learn/Images/DecisionTreeClassifier_ConfusionMatrix.png)
  
+- It is important to mention that the Random Forest did give us the option to see the importance of features to the model based on percentage. At first glance 'In App
+Purchases' seem to do the heavy lifting followed by 'Month Num' and 'Ad Supported'. Next, 'Price' is included in the list and then the entire model is finished off with all
+the categories contributing minuscule amounts.
 
+![]()
