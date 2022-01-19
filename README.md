@@ -19,36 +19,6 @@ The team will be communicating primarily over Slack and Google Docs. The files a
 
 The model was built with Jupyter Notebook with Pandas for data cleaning and wrangling, Matplotlib for model visualization with Jupyter Notebook, and SciKit Learn for Machine Learning. The csv file was pushed through a MongoDB database and an S3 AWS database to determine which would be more functional for this project. An app will be created in the future that will be run through flask.   
 
-## Data Exploration
-This analysis will be composed of two dataframes. The first dataframe will be our proprietary algorithm and include the rating, rating count, maximum installs, and a new column called success. The success column will be true or 1 if the app is above the median rating and maximum installs as well as above 250 rating count. The second dataframe will include features of an app. Category, price, size, release date, content rating, ads supported, and in-app-purchases are all features that will be analyzed in order to determine what drives success in apps. the original Kaggle file and newly cleaned csv file are robust, leading to data storage through MongoDB and S3 AWS. Both databases have been run through the machine learning model to showcase successful intgration.  
-
-## Machine Learning Model 
-This analysis lends itself to a supervised machine learning model. To run the machine learning model, a random sampling of about 20000 apps will be used to analyze our data. For this first segment a DecisionTreeClassifier and a RandomForestClassifier were run, but both got similar results of about 79% for the current question of whether an app was successful or not.  
-
-## Dashboard
-The dashboard is made as a flask app that can be used by future app developers. They will be able to input data about their potential app that falls into the category of our features. The flask app will then run whether or not the potential Google Play app will be successful or not according to the set abritrary parameters.  
-
-
-# Final Presentation 
-
-## Google Slides Outline
-
-
-## Visualizations
-
-Tableau was used to create visualization, and will be used to create interactive dashboards displaying data used to support findings of this project. Dashboards were created to display data on different features and results including installs, ratings, categories, and successful apps features.
-
-https://public.tableau.com/views/Google_App_Store_Final/SuccessfulApps?:language=en-US&:display_count=n&:origin=viz_share_link
-
-## Dashboard Conceptualization
-
-A storyboard was created using Google Slides to outline the basic features of our dashboard and the elements it will contain.
-
-https://docs.google.com/presentation/d/1EhOnHk-wfv1HrGhrd_nG5N0M-_3SBkQa_MmpDVsHwQg/edit?usp=sharing
-=======
-# Machine-_Learning_Dashboard_Capstone_2021
-
-
 ## DataCleanUpProcess
 
 - Uploaded Data to the S3 Storage on AWS Services
@@ -59,8 +29,9 @@ https://docs.google.com/presentation/d/1EhOnHk-wfv1HrGhrd_nG5N0M-_3SBkQa_MmpDVsH
 - Removed Maximum Installs less than 100
 - Changed the Date format 
 - Exported the Clean Data file and uploaded to S3 for ML Model 
-=======
-## Rutgers Data Bootcamp Final Project
+
+## Data Exploration
+This analysis will be composed of two dataframes. The first dataframe will be our proprietary algorithm and include the rating, rating count, maximum installs, and a new column called success. The success column will be true or 1 if the app is above the median rating and maximum installs as well as above 250 rating count. The second dataframe will include features of an app. Category, price, size, release date, content rating, ads supported, and in-app-purchases are all features that will be analyzed in order to determine what drives success in apps. the original Kaggle file and newly cleaned csv file are robust, leading to data storage through MongoDB and S3 AWS. Both databases have been run through the machine learning model to showcase successful intgration.  
 
 ## Data Preprocessing
 
@@ -74,27 +45,11 @@ https://docs.google.com/presentation/d/1EhOnHk-wfv1HrGhrd_nG5N0M-_3SBkQa_MmpDVsH
 8. Encoded the 'Category' column for use.
 9. Dropped the 'Released' column and 'Size (Mb)' column.
 
-## Feature Selection
 
-### Included:
-- Price
-- Ad Supported
-- In App Purchases
-- Month_Num (Released Month)
-- Encoded Category Columns
+## Machine Learning Model 
+This analysis lends itself to a supervised machine learning model. To run the machine learning model, a random sampling of about 20000 apps will be used to analyze our data. For this first segment a DecisionTreeClassifier and a RandomForestClassifier were run, but both got similar results of about 79% for the current question of whether an app was successful or not.  
 
-
-### Not Included:
-- Good_App column not included as this is the result we are looking to predict/test for.
-- Rating
-- Rating Count
-- Maximum Installs
-
-- Rating, Rating Count, and Maximum Installs were not included in the features because they were used to create
-the Good_App column and any machine learning selected would find this relationship and would result in a perfect match
-for the data no matter what.
-
-## Training and Testings Sets
+### Training and Testings Sets
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=78)
 
@@ -102,17 +57,33 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=78)
 
 - y values were simply the values from the Good_App column.
 
-## Model Choice
+### Model Choice
 
-- Ran through 4 different machine learning models before settling on DecisionTreeClassifier. Also performed RandomForestClassifier,
+Ran through 4 different machine learning models before settling on DecisionTreeClassifier. Also performed RandomForestClassifier,
 Random UnderSampling, and Boosting. However, none of these models performed significantly better than the DecisionTree Classifier to merit
 switching to them. The final accuracy score of the DecisionTreeClassifier being 0.7993422068496958.
 
 ![Confusion Matrix](https://github.com/Alyssa-Ann/Machine_Learning_Dashboard_Capstone_2021/blob/Machine_Learn/Images/DecisionTreeClassifier_ConfusionMatrix.png)
  
-- It is important to mention that the Random Forest did give us the option to see the importance of features to the model based on percentage. At first glance 'In App
+ It is important to mention that the Random Forest did give us the option to see the importance of features to the model based on percentage. At first glance 'In App
 Purchases' seem to do the heavy lifting followed by 'Month Num' and 'Ad Supported'. Next, 'Price' is included in the list and then the entire model is finished off with all
 the categories contributing minuscule amounts.
 
 ![Feature_Importance_List](https://github.com/Alyssa-Ann/Machine_Learning_Dashboard_Capstone_2021/blob/Machine_Learn/Images/Feature_Importance_List.png)
+
+
+## Dashboard
+The dashboard is made as a flask app that can be used by future app developers. They will be able to input data about their potential app that falls into the category of our features. The flask app will then run whether or not the potential Google Play app will be successful or not according to the set abritrary parameters.  
+
+
+# Final Presentation 
+
+
+## Visualizations
+
+Tableau was used to create visualization, and will be used to create interactive dashboards displaying data used to support findings of this project. Dashboards were created to display data on different features and results including installs, ratings, categories, and successful apps features.
+
+https://public.tableau.com/views/Google_App_Store_Final/SuccessfulApps?:language=en-US&:display_count=n&:origin=viz_share_link
+
+
 
