@@ -1,3 +1,24 @@
+
+# Final Presentation Outline
+
+## Google Slides Outline
+
+A breakdown of the presentation components and overall skeleton of the presentation was created using Google Slides. 
+
+https://docs.google.com/presentation/d/1CzfQGNICr494rHfeoBJDLGvN3tXc-nueh5KBQIHy9Y0/edit?usp=sharing
+
+## Visualizations
+
+Tableau was used to create visualization, and will be used to create interactive dashboards displaying data used to support findings of this project. Dashboards were created to display data on different features and results including installs, ratings, categories, and successful apps features.
+
+https://public.tableau.com/views/Google_App_Store_Final/SuccessfulApps?:language=en-US&:display_count=n&:origin=viz_share_link
+
+## Dashboard Conceptualization
+
+A storyboard was created using Google Slides to outline the basic features of our dashboard and the elements it will contain.
+
+https://docs.google.com/presentation/d/1EhOnHk-wfv1HrGhrd_nG5N0M-_3SBkQa_MmpDVsHwQg/edit?usp=sharing
+=======
 # Machine-_Learning_Dashboard_Capstone_2021
 ## Rutgers Data Bootcamp Final Project
 
@@ -54,3 +75,4 @@ Purchases' seem to do the heavy lifting followed by 'Month Num' and 'Ad Supporte
 the categories contributing minuscule amounts.
 
 ![Feature_Importance_List](https://github.com/Alyssa-Ann/Machine_Learning_Dashboard_Capstone_2021/blob/Machine_Learn/Images/Feature_Importance_List.png)
+
