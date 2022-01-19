@@ -50,6 +50,19 @@ A storyboard was created using Google Slides to outline the basic features of ou
 https://docs.google.com/presentation/d/1EhOnHk-wfv1HrGhrd_nG5N0M-_3SBkQa_MmpDVsHwQg/edit?usp=sharing
 =======
 # Machine-_Learning_Dashboard_Capstone_2021
+
+
+## DataCleanUpProcess
+
+- Uploaded Data to the S3 Storage on AWS Services
+- Sourced data to Jupyter Notebook from S3
+- Removed unwanted columns
+- Removed Null values
+- Removed Rating count less than 50
+- Removed Maximum Installs less than 100
+- Changed the Date format 
+- Exported the Clean Data file and uploaded to S3 for ML Model 
+=======
 ## Rutgers Data Bootcamp Final Project
 
 ## Data Preprocessing
