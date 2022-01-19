@@ -78,6 +78,7 @@ The dashboard is made as a flask app that can be used by future app developers. 
 
 # Final Presentation 
 
+*********************insert link once google slides is published 
 
 ## Visualizations
 
