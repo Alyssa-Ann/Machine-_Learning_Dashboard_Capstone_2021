@@ -26,16 +26,13 @@ This analysis will be composed of two dataframes. The first dataframe will be ou
 This analysis lends itself to a supervised machine learning model. To run the machine learning model, a random sampling of about 20000 apps will be used to analyze our data. For this first segment a DecisionTreeClassifier and a RandomForestClassifier were run, but both got similar results of about 79% for the current question of whether an app was successful or not.  
 
 ## Dashboard
-The dashboard has been conceptualized as a flask app that can be used by future app developers. They will be able to input data about their potential app that falls into the category of our features. The flask app will then run whether or not the potential Google Play app will be successful or not according to the set arbitrary parameters.
-=======
+The dashboard is made as a flask app that can be used by future app developers. They will be able to input data about their potential app that falls into the category of our features. The flask app will then run whether or not the potential Google Play app will be successful or not according to the set abritrary parameters.  
 
-# Final Presentation Outline
+
+# Final Presentation 
 
 ## Google Slides Outline
 
-A breakdown of the presentation components and overall skeleton of the presentation was created using Google Slides. 
-
-https://docs.google.com/presentation/d/1CzfQGNICr494rHfeoBJDLGvN3tXc-nueh5KBQIHy9Y0/edit?usp=sharing
 
 ## Visualizations
 
