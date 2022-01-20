@@ -76,15 +76,15 @@ the categories contributing minuscule amounts.
 The dashboard is made as a flask app that can be used by future app developers. They will be able to input data about their potential app that falls into the category of our features. The flask app will then run whether or not the potential Google Play app will be successful or not according to the set abritrary parameters.  
 
 
-# Final Presentation 
-
-*********************insert link once google slides is published 
-
 ## Visualizations
 
 Tableau was used to create visualization, and will be used to create interactive dashboards displaying data used to support findings of this project. Dashboards were created to display data on different features and results including installs, ratings, categories, and successful apps features.
 
 https://public.tableau.com/views/Google_App_Store_Final/SuccessfulApps?:language=en-US&:display_count=n&:origin=viz_share_link
 
+
+# Final Presentation 
+
+https://docs.google.com/presentation/d/e/2PACX-1vSVWfWmWKsnv25pmCfuLxQkUotg0pv3K3kOsqd11PSSE6jGdclGKDfUR9ggGKqEhdKQNurc4pGq_OmP/pub?start=false&loop=false&delayms=3000
 
 
